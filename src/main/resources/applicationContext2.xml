@@ -10,4 +10,22 @@
 
     <!-- 配置目标类-->
     <bean id="customerDao" class="com.jerry.aspectJ.demo2.CustomerDaoImpl"/>
+
+    <!-- 配置切面类-->
+    <bean id="myAspectXml" class="com.jerry.aspectJ.demo2.MyAspectXml"/>
+
+    <!-- aop相关配置-->
+    <aop:config>
+        <!-- 配置切入点-->
+        <aop:pointcut id="pointcut1" expression="execution(* com.jerry.aspectJ.demo2.CustomerDao.save())"/>
+
+
+        <!-- 配置Aop的切面类-->
+            <aop:aspect ref="myAspectXml">
+                <!--配置前置通知-->
+                <aop:before method="before" pointcut-ref="pointcut1"/>
+            </aop:aspect>
+
+
+    </aop:config>
 </beans>
