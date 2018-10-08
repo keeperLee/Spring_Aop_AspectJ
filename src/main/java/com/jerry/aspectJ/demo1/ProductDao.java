@@ -4,8 +4,9 @@ public class ProductDao {
     public void save(){
         System.out.println("保存商品");
     }
-    public void update(){
+    public String update(){
         System.out.println("修改商品");
+        return "hello";
     }
     public void delete(){
         System.out.println("删除商品");
