@@ -1,5 +1,7 @@
 package com.jerry.aspectJ.demo1;
 
+import org.aspectj.lang.annotation.Pointcut;
+
 public class ProductDao {
     public void save(){
         System.out.println("保存商品");
@@ -18,5 +20,7 @@ public class ProductDao {
     public void findAll(){
         System.out.println("查询所有商品");
     }
+
+
 
 }
