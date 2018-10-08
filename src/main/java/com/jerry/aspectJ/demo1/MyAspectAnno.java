@@ -58,7 +58,7 @@ public class MyAspectAnno {
 
     @AfterThrowing(value = "myPointCut4()",throwing="e")
     public void afterThrowing(Throwable e){
-        System.out.println("异常抛出" + e);
+        System.out.println("异常抛出" + e.getMessage());
     }
 
     @After(value = "myPointCut5()")
