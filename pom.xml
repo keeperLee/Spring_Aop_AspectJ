@@ -24,7 +24,6 @@
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.11</version>
-      <scope>test</scope>
     </dependency>
     <!-- 引入spring的基本开发包-->
     <dependency>

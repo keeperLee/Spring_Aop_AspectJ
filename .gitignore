@@ -20,8 +20,8 @@ idea/
 *.iml
 *.iws
 
-#temp log
 *.log
+#temp log
 *.diff
 *.cache
 *.patch
